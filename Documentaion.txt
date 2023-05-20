@@ -1,0 +1,27 @@
+
+Title = Covert bootstrap template into react component.
+
+Steps:
+
+1) add html and css files in index.js file. Like:
+
+	import './static/js/scripts.js'
+	import './static/css/styles.css'
+
+2) Install react router dom-v6
+
+3) Create  your all component pages like Home, About, Contact
+
+4) In App.js import all the component path and add the react router and the component and their end point.
+
+	import { BrowserRouter, Route, Routes } from 'react-router-dom';
+	<BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/faq" element={<FAQ />} />
+        </Routes>
+      </BrowserRouter>
+
